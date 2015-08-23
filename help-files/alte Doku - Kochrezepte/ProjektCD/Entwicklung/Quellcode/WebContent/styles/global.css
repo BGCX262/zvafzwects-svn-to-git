@@ -1,0 +1,982 @@
+/*
+	Autor: Christoph Antes
+*/
+
+
+@CHARSET "UTF-8";
+
+
+/* Standardabstaende entfernen */
+*{
+	padding:0;
+	margin:0;
+}
+ 
+ 
+/* Fonts und Hintergrundfarbe fuer body festlegen */
+body
+{
+	font:12px "verdana", Trebuchet MS, arial, sans-serif;
+	text-align:center;
+	color: #444;
+	background:#656500;
+	
+}
+
+input:focus {	
+    	background-color: #f9edc3;
+}
+ 
+ 
+ 
+ 
+/* Allgemeine Formatierungen */
+h1
+{
+	margin:1em 0;
+	font-size:16px;
+	text-transform:uppercase;
+	line-height:18px;
+}
+
+
+
+ 
+/* Hauptcontainer */
+
+/*Outer box zum platzieren der Kochmuetze und der Schrift "Kochrezepte"*/
+#outer_box
+{
+	position: absolute;
+	width:1150px;
+	height:200px;
+	left: 50%;
+	top: 0%;
+	margin-left: -550px; /* Damit der "Ausrichtungspunkt" in der Mitte der Box liegt */
+	text-align:center;
+	background:#656500;
+	z-index:1;
+}
+
+#box
+{
+	position: absolute;
+	width:900px;
+	height: auto;
+	left: 50%;
+	top: 16%;
+	margin-left: -450px; /* Damit der "Ausrichtungspunkt" in der Mitte der Box liegt */
+	margin-top: 70px;
+	text-align:center;
+	background-color: white;
+	z-index:1;
+}
+ 
+ 
+ 
+
+
+/* Header */
+
+/* Schrift: Kochrezepte */
+#header_font
+{
+	position: absolute;
+	left: 20%;
+	top: 28%;
+	width: 338px;
+	height: 36px;
+	
+}
+
+/*Kochmuetzenbild*/
+#togue
+{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index:2;
+}
+ 
+ 
+#header
+{
+	background:white;
+	height:140px;
+	color:black;
+	padding-left:30px;
+	text-align:left;
+	border-bottom: 25px solid #656500;
+}
+
+
+/* Suchbereich im Header */
+#header_search
+{
+	width: 300px;
+	height: 50px;
+	padding: 5px 15px 20px 0px;
+	margin-left: 80px;
+	float:left;
+}
+
+form.quicksearch 
+{
+	margin:0 0 0 0;
+	display:block
+}  
+
+fieldset.quicksearch  
+{
+	width: 300px;
+	height: 65px;
+	padding: 5px 0px 0px 0px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+
+form.quicksearch legend
+{
+	margin-left: 20px;
+	color: #444;
+	align:center;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+
+form.quicksearch  p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.quicksearch  label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+form.quicksearch  input
+{	
+    margin-left: 22px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Accountverwaltung: Login/out Nutzerdaten */
+
+
+#header_account
+{
+	width: 300px;
+	height: 100px;
+	padding: 5px 15px 20px 0px;
+	float: right;
+	margin-right: 70px;
+}
+
+ 
+form.account 
+{
+	margin:0 0;
+	display:inline;
+}  
+
+form.account fieldset 
+{
+	width: 300px;
+	height: 110px;
+	padding: 5px 0px 0px 20px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+form.account legend
+{
+	margin-left: 0px;
+	color: #444;
+	align:center;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+form.account  p 
+{
+	margin-top: 5px;
+}
+
+form.account  label 
+{
+	display:block;
+	float:left;
+	float: left;
+	width: 80px;
+	
+}
+
+form.account  input
+{	
+	display:block;
+	float:left;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+input.accountbutton
+{
+	display:block;
+	float:right;
+}
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* Navigation */
+
+#navigation ul
+{
+	padding: 8px 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: #4f4f00;
+	width: 100%;
+	font: 14px "Trebuchet MS", verdana, arial, sans-serif;
+	color: white;
+	text-align: center;
+}
+
+li.navigation 
+{ 
+	display: inline;
+	color:white;
+}
+
+li.navigation a
+{
+	text-decoration: none;
+	background-color: #4f4f00;
+	color: white;
+	padding: 8px 20px;
+	/*border-right: 1px solid #fff;*/
+}
+
+li.navigation a:hover
+{
+	background-color: #ffcc33;
+	color: #444;
+}
+
+ 
+/* Inhalt */
+ 
+#content
+{
+	padding:10px 20px;
+	margin-top: 35px;
+	text-align:left;
+	clear:left;
+	min-height:600px;
+}
+
+
+/* Registrierung */
+
+form.register 
+{
+	width: 700px;
+	padding: 10px 15px 20px 0px;
+}  
+
+fieldset.register 
+{
+	width: 600px;
+	margin-bottom:10px;
+	padding: 20px 30px 20px 30px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+legend.register 
+{
+	margin-left: 20px;
+	color: #f4dd8d;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+form.register p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.register label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+form.register input
+{	
+    margin-left: 30px;
+}
+
+
+#submit_register 
+{
+	width: 90px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+} 	
+
+
+
+
+
+
+/* Namen Vergessen (secretName) */
+
+form.secretname 
+{
+	width: 700px;
+	padding: 10px 15px 20px 0px;
+}  
+
+fieldset.secretname 
+{
+	width: 600px;
+	margin-bottom:10px;
+	padding: 20px 30px 20px 30px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+legend.secretname
+{
+	margin-left: 20px;
+	color: #f4dd8d;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+form.secretname p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.secretname label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+form.secretname input
+{	
+    margin-left: 20px;
+}
+	
+#submit_secretname 
+{
+	width: 90px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+
+}
+
+
+
+
+#submit_register 
+{
+	width: 90px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+} 	
+
+
+
+
+
+
+
+
+/* Namen Vergessen (secretQuestion) */
+
+form.secretquestion 
+{
+	width: 700px;
+	padding: 10px 15px 20px 0px;
+}  
+
+fieldset.secretquestion 
+{
+	width: 600px;
+	margin-bottom:10px;
+	padding: 20px 30px 20px 30px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+legend.secretquestion
+{
+	margin-left: 20px;
+	color: #f4dd8d;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+form.secretquestion p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.secretquestion label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+form.secretquestion input
+{	
+    margin-left: 20px;
+}
+	
+#submit_secretquestion 
+{
+	width: 110px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+/* neues Rezept erstellen */
+
+form.createrecipe
+{
+	width: 700px;
+	padding: 10px 15px 20px 0px;
+}  
+
+fieldset.createrecipe
+{
+	width: 600px;
+	margin-bottom:10px;
+	padding: 20px 30px 20px 30px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+
+form.createrecipe p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.createrecipe label 
+{
+	display:block;
+	float: left;
+	width: 80px;
+	text-align: left;
+
+}
+
+form.createrecipe input
+{	
+	display:block;
+    margin-left: 100px;
+}
+
+form.createrecipe textarea
+{
+	display:block;
+	margin-left: 100px;
+}
+
+
+#submit_createrecipe
+{
+	width: 90px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+}
+
+
+
+
+/* Rezept editieren */
+
+
+form.editrecipe
+{
+	width: 700px;
+	padding: 10px 15px 20px 0px;
+}  
+
+fieldset.editrecipe 
+{
+	width: 600px;
+	margin-bottom:10px;
+	padding: 40px 30px 20px 30px;
+	background-color: #f2f2f2;
+	border: 1px solid #f4dd8d;
+}
+
+form.editrecipe legend
+{
+	margin-left: 0px;
+	color: #444;
+	font-size: 16px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+form.editrecipe p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+p.maxsymbols
+{
+	display: inline;
+}
+	
+
+form.editrecipe label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+	margin-right: 40px;
+}
+
+form.editrecipe input
+{	
+    margin-left:0px;
+}
+
+form.editrecipe checkbox
+{
+	margin-left:0px;
+}
+	
+form.editrecipe hr
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+	
+form.editrecipe ol
+{
+	list-style-position:outside;
+}
+
+label.ingr_label
+{
+	white-space:nowrap;
+}
+	
+#submit_editrecipe 
+{
+	width: 110px;
+	margin-top: 10px;
+	margin-left: 0px;
+	cursor: pointer;
+}
+
+fieldset.prepstep
+{
+	width: 600px;
+	margin-bottom:50px;
+	background-color: #f2f2f2;
+	border: 0 none;
+	border: 1px solid #f4dd8d;
+}
+fieldset.prepstep
+{
+	width: 600px;
+	margin-bottom:50px;
+	padding: 40px 30px 20px 30px;
+	background-color: #f2f2f2;
+	border: 0 none;
+	border: 1px solid #f4dd8d;
+}
+
+fieldset.prepstep p
+{
+	width: 600px;
+	margin: 0;
+	overflow: auto;
+}
+
+fieldset.prepstep_inner 
+{
+	width: 600px;
+	margin-bottom: 0 none;
+	padding: 40px 30px 20px -30px;
+	background-color: #f2f2f2;
+	border: 0 none;
+}
+
+legend.prep
+{
+	margin-left: 20px;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+/* Suchergebnisse */
+
+#search_result
+{
+	width: 800px;
+	margin: 0px 10px 50px 0px;
+}
+
+table.search_result
+{
+	table-layout:auto;
+	width: 800px;
+}
+
+th.search_result 
+{
+	font: 12px "verdana",Trebuchet MS, arial, sans-serif;
+	color: white;
+	letter-spacing: 0px;
+	text-align: center;
+	padding: 6px 12px 6px 12px;
+	background: #656500;
+}
+
+td.search_result
+{
+	width: auto;
+	height: 40px;
+	padding-right: 18px;
+
+}
+
+td.search_result_name
+{
+	width: 500px;
+}
+
+tr.search_result:hover
+{
+	background-color:#ededeb;
+}
+
+fieldset.search_result
+{
+	border: 0 none;
+}
+	
+
+
+
+
+
+/* Rezeptanzeige */
+table.showrecipe
+{
+}
+td.showrecipe
+{
+	padding-left: 35px;
+
+}
+
+table.recipeoverview
+{
+	margin-top:15px;
+	float:left;
+}
+
+
+#recipeoptions
+{
+	height: 200px;
+	border-left: 1px solid #444;
+	padding-left:70px;
+	float: right;
+	margin-top:15px;
+	margin-right:250px;
+	margin-bottom: 30px;
+}
+
+
+/* Hinweis & Error */
+#InfoMsg
+{
+	width: auto;
+	background-color: #f9edc3;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 5px 20px 5px 20px;
+	text-allign: center;
+	margin: 0 0 3em 0;
+}
+
+#ErrorMsg
+{
+	width: auto;
+	background-color: #f9edc3;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 5px 20px 5px 20px;
+	text-allign: center;
+	margin: 0 0 3em 0;
+}
+
+
+
+
+
+ 
+/* Footer */
+ 
+#footer
+{
+	height:30px;
+	line-height:30px;
+	width: 100%;
+	background-color: #81716b;
+	color: white;
+	text-align:center;
+	float: left;
+}
+
+
+
+
+
+
+/* Druckansicht */
+body#print
+{
+	font:20px "times new roman", serif;
+	text-align:left;
+	font-color:black;
+	background-color:white;
+	padding-left:40px;
+}
+
+td.print
+{
+	padding-left: 35px;
+}
+
+
+
+
+
+/* Usersuche */
+
+#cook_search
+{
+	width: 800px;
+	height: 50px;
+	float:left;
+}
+
+form.cook_search
+{
+	margin:0 0 0 0;
+	display:block
+}  
+
+fieldset.cook_search 
+{
+	width: 300px;
+	height: 50px;
+	padding: 5px 0px 0px 0px;
+	border: 1px solid #f4dd8d;
+	background-color: #f2f2f2;
+}
+
+
+form.cook_search legend
+{
+	margin-left: 20px;
+	color: #444;
+	align:center;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+} 
+
+
+form.cook_search  p 
+{
+	width: 600px;
+	margin: 5px auto;
+	overflow: auto;
+}
+
+form.cook_search  label 
+{
+	float: left;
+	width: 80px;
+	text-align: left;
+}
+
+form.cook_search  input
+{	
+    margin-left: 22px;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Aussehen der Standardlinks festlegen*/
+a 
+{
+  cursor: pointer;
+  outline: none;
+}
+
+a:link 
+{ 
+	color: #444; 
+}
+
+a:visited 
+{ 
+	color: #444; 
+
+}
+a:hover 
+{
+	color: #ffcc33;
+}
+
+
+/* "Aussehen von Login- und Suchlink" im Header */
+a.header
+{
+	font-size: 20px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:5px;
+}
+
+a.header:hover
+{
+	background: #81716b;
+	color: white;
+}
+
+
+
+/* Errormessage */
+h3.error
+{
+	color: red;
+}
+p.error{
+	color: red;
+}
+
+
+/* Eingabefeld beim Erstellen eines Rezeptes */
+#create_recipe_input 
+{
+  border: 1px #999 solid;
+}
+
+#create_recipe_input:hover 
+{
+  background-color: #eee;
+}
+
+#create_recipe_input:focus 
+{
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+

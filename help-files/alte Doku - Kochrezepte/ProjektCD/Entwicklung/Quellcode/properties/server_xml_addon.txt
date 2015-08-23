@@ -1,0 +1,15 @@
+ <!-- ************************************************************************************************* -->
+ <!-- Muss für den Connectionpool in die server.xml, vor </Host> kopiert werden -->
+ <!-- ************************************************************************************************* -->
+ <!-- ************************************************************************************************* -->
+ <!-- ************************************************************************************************* -->
+
+      <Context docBase="lokalhorst" path="/lokalhorst" reloadable="true" source="org.eclipse.jst.jee.server:lokalhorst">
+      	<Resource auth="Container" driverClassName="com.sap.dbtech.jdbc.DriverSapDB" 
+      			  maxActive="100" maxIdle="30" maxWait="10000" 
+      			  removeAbandoned="true" logAbandoned="true" removeAbandonedTimeout="60"  
+      			  name="jdbc/KochrezepteDB" password="gruppe_a" 
+      			  type="javax.sql.DataSource" url="jdbc:sapdb://10.0.107.19/info_102" 
+      			  username="gruppe_a" 
+      	/>
+      </Context>

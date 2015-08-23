@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Eclipse/db4o-8.0.236.16058-all-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Programme/Eclipse/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.4.1.v3449c.jar"/>
+	<classpathentry kind="lib" path="lib/appFramework-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jnlp.jar"/>
+	<classpathentry kind="lib" path="lib/swing-layout.jar" sourcepath="lib/swing-layout-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Dokumente%20und%20Einstellungen/Andreas%20Baur/Eigene%20Dateien/STUDIUM/1.%20Semester/2.%20GDI/4.%20Tutorial/Java-Programme/Eigene/Eclipse/PersonenDB4O/lib/swing-layout-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

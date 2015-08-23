@@ -1,0 +1,21 @@
+#labels Phase-Implementation
+#Styleguide of zvafzwects
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+== Comments ==
+In English, if possible.
+
+== JavaDoc Comments ==
+Add JavaDoc to all methods and classes you create.
+
+== Encoding ==
+The encoding of the source code files should be *utf-8*. You can change the encoding in Eclipse in the preferences under General > Workspace: Text file encoding. Choose "other: utf-8" there.
+
+== Variable/function names ==
+CamelCase (java default)

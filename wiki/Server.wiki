@@ -1,0 +1,27 @@
+#VM related data and start/stop scripts for servers
+
+== Virtual Machine ==
+
+*IP:*   10.0.107.101
+
+*user:* developer
+
+*pwd:*  12PROzss
+
+== Apache Tomcat ==
+
+*folder:* {{{ ~/apache-tomcat/bin }}}
+
+*start:*  {{{ startup.sh }}}
+
+*stop:*   {{{ shutdown.sh }}}
+
+
+== db4o-Server ==
+Memory size for Java-VM is set from Min 128M up to 1024M
+
+*folder:* {{{ ~/db4oServer }}}
+
+*start:* {{{ db4oServer.sh start }}}
+
+*stop:*  {{{ db4oServer.sh stop }}}

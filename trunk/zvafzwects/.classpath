@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-fileupload-1.2.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://commons.apache.org/fileupload/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/commons-io-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/db4o-8.0.184.15484-all-java5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://community.versant.com/documentation/reference/db4o-8.0/java/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/java_mp3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/zvafzwects/libs/java_mp3-0.4-src.zip!/doc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/jstl-api-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jstl-impl-1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
